@@ -2,9 +2,11 @@
   "name": "sort-battle",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bundle.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "webpack-dev-server --open",
+    "test": "webpack && webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,21 @@
   "bugs": {
     "url": "https://github.com/yotsugi-vip/sort-battle/issues"
   },
-  "homepage": "https://github.com/yotsugi-vip/sort-battle#readme"
+  "homepage": "https://github.com/yotsugi-vip/sort-battle#readme",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@types/material-ui": "^0.21.8",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/webpack": "^4.41.22",
+    "ts-loader": "^8.0.4"
+  }
 }
